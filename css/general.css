@@ -1,13 +1,16 @@
-html {
-  font-size: 62.5%;
-  /* as a persentage to care about accessibility, 62.5% from 16px is 10px*/
-}
-
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+  /* as a persentage to care about accessibility, 62.5% from 16px is 10px*/
   overflow-x: hidden;
+
+  /* isnt working in safari and some other browsers, so we'll write everything in js */
+  /* scroll-behavior: smooth; */
 }
 
 body {
@@ -44,10 +47,6 @@ body {
 
 .grid--4-cols {
   grid-template-columns: repeat(4, 1fr);
-}
-
-.grid--5-cols {
-  grid-template-columns: repeat(5, 1fr);
 }
 
 .grid--center-v {
